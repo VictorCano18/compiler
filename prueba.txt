@@ -1,0 +1,16 @@
+int a[5];
+
+int compare (int x, int y, int z){
+    a[2] = x;
+    if(a[2] > z){
+        a[1] = x + y;
+    }else{
+        a[1] = x - y;
+    }
+    x = a[1];
+    return x; 
+}
+
+void main(void){
+    compare(5,4,2);
+}
